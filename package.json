@@ -1,12 +1,20 @@
 {
-  "name": "your-bot",
+  "name": "moderator-discord-bot",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Your Name <your@email.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schollsebastian/Moderator-Discord-Bot.git"
+  },
+  "author": "Sebastian Scholl <scholl.sebastian@gmx.at>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schollsebastian/Moderator-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/schollsebastian/Moderator-Discord-Bot#readme",
   "dependencies": {
     "discord.js": "^12.3.1"
   }

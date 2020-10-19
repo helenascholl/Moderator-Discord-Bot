@@ -4,7 +4,7 @@ Some description.
 
 ## Invite the bot
 
-https://discordapp.com/oauth2/authorize?&client_id=[CLIENT ID]&scope=bot&permissions=[PERMISSIONS]
+https://discordapp.com/oauth2/authorize?&client_id=767641036859375656&scope=bot&permissions=8192
 
 ## For Developers
 
