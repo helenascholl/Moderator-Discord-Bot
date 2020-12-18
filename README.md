@@ -1,10 +1,10 @@
-# Your-Bot
+# Moderator-Discord-Bot
 
-Some description.
+Automatically delete images.
 
 ## Invite the bot
 
-https://discordapp.com/oauth2/authorize?&client_id=767641036859375656&scope=bot&permissions=8192
+https://discordapp.com/oauth2/authorize?&client_id=767641036859375656&scope=bot&permissions=10240
 
 ## For Developers
 
