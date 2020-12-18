@@ -1,9 +1,12 @@
-FROM node:14
+FROM python:3.9.1
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+RUN apt update && \
+    apt install -y cmake
 
-RUN npm install
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
 
 COPY . .
