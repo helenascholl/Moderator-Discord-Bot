@@ -17,13 +17,14 @@ jobs:
           cp template.env .env
           sed -i 's/yourtoken/${{ secrets.DISCORD_TOKEN }}/g' .env
       - name: Deploy to server
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@v2.1.6
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SOURCE: ./
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
+          EXCLUDE: /.git/
       - name: Start Docker container
         uses: garygrossgarten/github-action-ssh@v0.6.3
         with:
