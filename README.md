@@ -10,7 +10,8 @@ https://discordapp.com/oauth2/authorize?&client_id=767641036859375656&scope=bot&
 
 ### Create a Discord Application
 
-If you want to run the bot yourself, [create a new Discord Bot](https://discordapp.com/developers/docs/intro#bots-and-apps) and copy the token into  `.env` (do not commit this file).
+If you want to run the bot yourself, create a new file called `.env` based on `template.env`. Then
+[create a new Discord Bot](https://discordapp.com/developers/docs/intro#bots-and-apps) and paste the token into `.env`.
 
 ### Start the Bot
 
