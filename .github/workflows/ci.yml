@@ -16,7 +16,7 @@ jobs:
         run: |
           cp template.env .env
           sed -i 's/yourtoken/${{ secrets.DISCORD_TOKEN }}/g' .env
-      - name: Deploy to Server
+      - name: Deploy to server
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
