@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+      - name: Download images
+        run: |
+          curl ${{ secrets.IMAGES_URL }} -o images.tar.gz
+          tar -xvf images.tar.gz
       - name: Add Dicord token
         run: |
           cp template.env .env
