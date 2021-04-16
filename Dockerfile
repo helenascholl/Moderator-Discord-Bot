@@ -1,11 +1,6 @@
-FROM python:3.8-buster
+FROM schollsebastian/python-dlib:3.8-buster
 
 WORKDIR /usr/src/app
-
-RUN apt-get update && \
-    apt-get install -y cmake && \
-    pip -V && \
-    pip3 install dlib -vvv
 
 COPY requirements.txt .
 
